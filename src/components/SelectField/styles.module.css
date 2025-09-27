@@ -1,0 +1,84 @@
+.select-field {
+    position: relative;
+    display: inline-block;
+    /* width: 220px; */
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.select-field .select-field-label {
+    margin-bottom: 6px;
+    color: var(--ifm-font-color-base);
+    font-weight: 500;
+}
+
+.select-field .select-field-toggle {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    text-align: left;
+    background: var(--ifm-background-color);
+    border: 1px solid var(--ifm-font-color-base);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-field .select-field-toggle:hover {
+    border-color: var(--ifm-color-primary);
+}
+
+.select-field .select-field-toggle .clear {
+    position: absolute;
+    inset-inline-end: 30px;
+    padding: 4px;
+}
+
+.select-field .select-field-toggle .placeholder {
+    font-style: italic;
+    color: var(--ifm-color-emphasis-600);
+}
+
+.select-field .select-field-toggle .arrow {
+    border: solid #555;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+.select-field .select-field-toggle .arrow.up {
+    transform: rotate(-135deg);
+}
+
+.select-field .select-field-menu {
+    position: absolute;
+    margin-top: 4px;
+    width: 100%;
+    background: var(--ifm-background-surface-color);
+    border: 1px solid var(--ifm-font-color-base);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+}
+
+.select-field .select-field-menu .select-field-item {
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.select-field .select-field-menu .select-field-item:hover {
+    background: var(--ifm-color-emphasis-200);
+}
+
+.select-field .select-field-menu .select-field-item.selected {
+    background: var(--ifm-color-primary);
+    color: var(--ifm-font-color-base-inverse);
+}

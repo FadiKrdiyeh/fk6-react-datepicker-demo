@@ -1,0 +1,38 @@
+.textfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+}
+
+.textfield .textfield-label {
+    margin-bottom: 6px;
+    color: var(--ifm-font-color-base);
+    font-weight: 500;
+}
+
+.textfield .textfield-input {
+    padding: 10px 12px;
+    border: 1px solid var(--ifm-font-color-base);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--ifm-font-color-base);
+    background: var(--ifm-background-surface-color);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.textfield .textfield-input:focus {
+    border-color: var(--ifm-color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.textfield .textfield-input.error {
+    border-color: red;
+}
+
+.textfield-error {
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
+}
