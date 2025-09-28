@@ -3,6 +3,8 @@ import React from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { DatePickerProps } from "@fk6/react-datepicker";
 
+import "@fk6/react-datepicker/react-datepicker.css";
+
 export default function FK6DatePicker(props: DatePickerProps) {
     return (
         <BrowserOnly fallback={<div>Loading...</div>}>

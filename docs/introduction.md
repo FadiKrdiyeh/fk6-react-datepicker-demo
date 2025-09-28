@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@fk6/react-datepicker.svg)](https://www.npmjs.com/package/@fk6/react-datepicker)
 [![npm downloads](https://img.shields.io/npm/dm/@fk6/react-datepicker.svg)](https://www.npmjs.com/package/@fk6/react-datepicker)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@fk6/react-datepicker.svg)](https://bundlephobia.com/package/@fk6/react-datepicker)
-[![license](https://img.shields.io/npm/l/@fk6/react-datepicker.svg)](LICENSE)
+[![license](https://img.shields.io/npm/l/@fk6/react-datepicker.svg)](https://github.com/FadiKrdiyeh/fk6-react-datepicker/blob/main/LICENSE)
 
 ## 🤔 Why To Use It?
 
