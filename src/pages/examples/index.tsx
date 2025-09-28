@@ -463,9 +463,22 @@ export default function Examples() {
                                 >
                                     {copied1 ? "Copied!" : "Copy"}
                                 </button>
-                                <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
+
+                                <BrowserOnly>
+                                    {() => {
+                                        const SyntaxHighlighter = require("react-syntax-highlighter").Prism;
+                                        // const dracula = require("react-syntax-highlighter/dist/esm/styles/prism").dracula;
+
+                                        return (
+                                            <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
+                                                {cleanCode(datePickerCode)}
+                                            </SyntaxHighlighter>
+                                        )
+                                    }}
+                                </BrowserOnly>
+                                {/* <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
                                     {cleanCode(datePickerCode)}
-                                </SyntaxHighlighter>
+                                </SyntaxHighlighter> */}
                             </div>
 
                             {!!datePickerValue ? (!!format ? moment(datePickerValue).format(format) : datePickerValue.toString()) : 'Select Value...'}
@@ -525,10 +538,10 @@ export default function Examples() {
                                     {copied2 ? "Copied!" : "Copy"}
                                 </button>
 
-                                {/* <BrowserOnly>
+                                <BrowserOnly>
                                     {() => {
                                         const SyntaxHighlighter = require("react-syntax-highlighter").Prism;
-                                        const dracula = require("react-syntax-highlighter/dist/esm/styles/prism").dracula;
+                                        // const dracula = require("react-syntax-highlighter/dist/esm/styles/prism").dracula;
 
                                         return (
                                             <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
@@ -536,10 +549,10 @@ export default function Examples() {
                                             </SyntaxHighlighter>
                                         )
                                     }}
-                                </BrowserOnly> */}
-                                <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
+                                </BrowserOnly>
+                                {/* <SyntaxHighlighter customStyle={{ padding: '25px', height: '100%' }} language="tsx" style={dracula}>
                                     {cleanCode(dateTimePickerCode)}
-                                </SyntaxHighlighter>
+                                </SyntaxHighlighter> */}
                             </div>
 
                             {!!datetimePickerValue ? (!!format ? moment(datetimePickerValue).format(format) : datetimePickerValue.toString()) : 'Select Value...'}
