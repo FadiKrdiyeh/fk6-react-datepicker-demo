@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_datepicker_demo=self.webpackChunkreact_datepicker_demo||[]).push([[647],{7121:(e,r,a)=>{a.r(r),a.d(r,{default:()=>p});a(6540);var c=a(4164),s=a(7559),t=a(5500),d=a(2831),u=a(1656),n=a(4848);function p(e){return(0,n.jsx)(t.e3,{className:(0,c.A)(s.G.wrapper.docsPages),children:(0,n.jsx)(u.A,{children:(0,d.v)(e.route.routes)})})}}}]);
