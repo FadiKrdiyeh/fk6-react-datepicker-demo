@@ -221,10 +221,10 @@ export default function Examples() {
     const [state, setState] = useState<{ [key: string]: boolean }>({});
 
     useEffect(() => {
-        const CalendarPositionsEnum1: (typeof CalendarPositionsEnum) = require('@fk6/react-datepicker').CalendarPositionsEnum;
-        const ThemesEnum1: (typeof ThemesEnum) = require('@fk6/react-datepicker').ThemesEnum;
-        const CalendarsEnum1: (typeof CalendarsEnum) = require('@fk6/react-datepicker').CalendarsEnum;
-        const CalendarViewsEnum1: (typeof CalendarViewsEnum) = require('@fk6/react-datepicker').CalendarViewsEnum;
+        const CalendarPositionsEnum1: (typeof CalendarPositionsEnum) = require('@fk6/react-datepicker/index.es.js').CalendarPositionsEnum;
+        const ThemesEnum1: (typeof ThemesEnum) = require('@fk6/react-datepicker/index.es.js').ThemesEnum;
+        const CalendarsEnum1: (typeof CalendarsEnum) = require('@fk6/react-datepicker/index.es.js').CalendarsEnum;
+        const CalendarViewsEnum1: (typeof CalendarViewsEnum) = require('@fk6/react-datepicker/index.es.js').CalendarViewsEnum;
 
         setState({
             hasPosition: !!position && position?.id !== CalendarPositionsEnum1.Bottom,
@@ -608,7 +608,7 @@ export default function Examples() {
                             {/* Calendar */}
                             <BrowserOnly>
                                 {() => {
-                                    const CalendarsEnum1: typeof CalendarsEnum = require("@fk6/react-datepicker").CalendarsEnum;
+                                    const CalendarsEnum1: typeof CalendarsEnum = require("@fk6/react-datepicker/index.es.js").CalendarsEnum;
                                     return (
                                         <SelectField
                                             options={generateListFromEnum(CalendarsEnum1)}
@@ -637,7 +637,7 @@ export default function Examples() {
                             {/* Position */}
                             <BrowserOnly>
                                 {() => {
-                                    const CalendarPositionsEnum1: typeof CalendarPositionsEnum = require("@fk6/react-datepicker").CalendarPositionsEnum;
+                                    const CalendarPositionsEnum1: typeof CalendarPositionsEnum = require("@fk6/react-datepicker/index.es.js").CalendarPositionsEnum;
                                     return (
                                         <SelectField
                                             options={generateListFromEnum(CalendarPositionsEnum1)}
@@ -655,7 +655,7 @@ export default function Examples() {
                             {/* Theme */}
                             <BrowserOnly>
                                 {() => {
-                                    const ThemesEnum1: typeof ThemesEnum = require("@fk6/react-datepicker").ThemesEnum;
+                                    const ThemesEnum1: typeof ThemesEnum = require("@fk6/react-datepicker/index.es.js").ThemesEnum;
                                     return (
                                         <SelectField
                                             options={generateListFromEnum(ThemesEnum1)}
@@ -741,7 +741,7 @@ export default function Examples() {
                             {/* Initial View */}
                             <BrowserOnly>
                                 {() => {
-                                    const CalendarViewsEnum1: typeof CalendarViewsEnum = require("@fk6/react-datepicker").CalendarViewsEnum;
+                                    const CalendarViewsEnum1: typeof CalendarViewsEnum = require("@fk6/react-datepicker/index.es.js").CalendarViewsEnum;
                                     return (
                                         <SelectField
                                             options={generateListFromEnum(CalendarViewsEnum1)}
@@ -759,7 +759,7 @@ export default function Examples() {
                             {/* Views */}
                             <BrowserOnly>
                                 {() => {
-                                    const CalendarViewsEnum1: typeof CalendarViewsEnum = require("@fk6/react-datepicker").CalendarViewsEnum;
+                                    const CalendarViewsEnum1: typeof CalendarViewsEnum = require("@fk6/react-datepicker/index.es.js").CalendarViewsEnum;
                                     return (
                                         <SelectField
                                             multiple
