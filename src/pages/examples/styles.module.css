@@ -1,0 +1,73 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+    .heroBanner {
+        padding: 2rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.container .grid {
+    display: grid;
+    width: 100%;
+}
+
+.grid .grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .grid-item .label {
+    margin-bottom: 3px;
+    color: var(--ifm-font-color-base);
+    font-weight: 500;
+}
+
+.datepicker .datepicker-input-container {
+    width: 100%;
+}
+
+.datepicker .datepicker-input-container .datepicker-input {
+    height: 37px;
+}
+
+@media (max-width: 1200px) {
+    .container .grid-item {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .grid-item {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.datepicker-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
